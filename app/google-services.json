@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "367850886705",
+    "project_id": "chatitapp-dadba",
+    "storage_bucket": "chatitapp-dadba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367850886705:android:13cf96ca87f171ba00a710",
+        "android_client_info": {
+          "package_name": "com.android.gajju45.chatitapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367850886705-hfpnijr18d5e7pkt41srkfp2ti4099kb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCITa-OlNauN8hErYAQZv3Clrs-QsLkPMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367850886705-hfpnijr18d5e7pkt41srkfp2ti4099kb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_purple"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@drawable/ic_baseline_chat_24" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/spartan_bold"
+            android:gravity="center"
+            android:text=" Chat it"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/spartan_regular"
+            android:gravity="center"
+            android:text="Chat with your Best Buddy!!"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+        <ProgressBar
+
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_margin="@dimen/_5sdp"/>
+    </LinearLayout>
+
+</RelativeLayout>
