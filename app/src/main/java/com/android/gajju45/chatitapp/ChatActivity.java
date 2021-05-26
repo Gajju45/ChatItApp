@@ -29,7 +29,9 @@ import com.squareup.picasso.Picasso;
 import com.vanniktech.emoji.EmojiPopup;
 import com.vanniktech.emoji.EmojiTextView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -52,6 +54,12 @@ public class ChatActivity extends AppCompatActivity { String ReciverImage, Reciv
     ImageView btEmoji;
     LinearLayout linearLayout;
 
+    String currentTime;
+    Calendar calendar;
+    SimpleDateFormat simpleDateFormat;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +67,8 @@ public class ChatActivity extends AppCompatActivity { String ReciverImage, Reciv
 
         database = FirebaseDatabase.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
+        calendar=Calendar.getInstance();
+        simpleDateFormat=new SimpleDateFormat("hh:mm a");
 
         ReciverName = getIntent().getStringExtra("name");
         ReciverImage = getIntent().getStringExtra("ReciverImage");
@@ -178,10 +188,13 @@ public class ChatActivity extends AppCompatActivity { String ReciverImage, Reciv
                     Toast.makeText(ChatActivity.this, "Please enter Valid Message", Toast.LENGTH_SHORT).show();
                     return;
                 }
+
+
                 edtMessage.setText("");
                 Date date = new Date();
+                currentTime=simpleDateFormat.format(calendar.getTime());
 
-                MessagesModel messages = new MessagesModel(message, SenderUID, date.getTime());
+                MessagesModel messages = new MessagesModel(message, SenderUID, date.getTime(),currentTime);
 
                 database.getReference().child("chats")
                         .child(senderRoom)
@@ -204,6 +217,8 @@ public class ChatActivity extends AppCompatActivity { String ReciverImage, Reciv
 
             }
         });
+
+
 
 
     }

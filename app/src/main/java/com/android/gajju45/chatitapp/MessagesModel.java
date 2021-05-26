@@ -4,14 +4,18 @@ public class MessagesModel {
     String message;
     String senderId;
     long timeStamp;
+    String currentTime;
 
     public MessagesModel() {
     }
 
-    public MessagesModel(String message, String senderId, long timeStamp) {
+
+
+    public MessagesModel(String message, String senderId, long timeStamp, String currentTime) {
         this.message = message;
         this.senderId = senderId;
         this.timeStamp = timeStamp;
+        this.currentTime = currentTime;
     }
 
     public String getMessage() {
@@ -36,5 +40,13 @@ public class MessagesModel {
 
     public void setTimeStamp(long timeStamp) {
         this.timeStamp = timeStamp;
+    }
+
+    public String getCurrentTime() {
+        return currentTime;
+    }
+
+    public void setCurrentTime(String currentTime) {
+        this.currentTime = currentTime;
     }
 }

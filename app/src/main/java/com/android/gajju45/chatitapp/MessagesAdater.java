@@ -56,11 +56,13 @@ public class MessagesAdater extends RecyclerView.Adapter {
             SenderViewHolder viewHolder = (SenderViewHolder) holder;
             viewHolder.txtmessage.setText(messages.getMessage());
             Picasso.get().load(sImage).into(viewHolder.circleImageView);
+            viewHolder.timeofmessage.setText(messages.getCurrentTime());
 
         } else {
             ReciverViewHolder viewHolder = (ReciverViewHolder) holder;
             viewHolder.txtmessage.setText(messages.getMessage());
             Picasso.get().load(rImage).into(viewHolder.circleImageView);
+            viewHolder.timeofmessage.setText(messages.getCurrentTime());
         }
 
     }
@@ -84,12 +86,13 @@ public class MessagesAdater extends RecyclerView.Adapter {
 
         CircleImageView circleImageView;
         TextView txtmessage;
-
+        TextView timeofmessage;
         public SenderViewHolder(@NonNull View itemView) {
             super(itemView);
 
             circleImageView = itemView.findViewById(R.id.profile_image);
             txtmessage = itemView.findViewById(R.id.txtMessages);
+            timeofmessage=itemView.findViewById(R.id.timeOfMessage);
 
         }
     }
@@ -98,12 +101,14 @@ public class MessagesAdater extends RecyclerView.Adapter {
 
         CircleImageView circleImageView;
         TextView txtmessage;
+        TextView timeofmessage;
 
         public ReciverViewHolder(@NonNull View itemView) {
             super(itemView);
 
             circleImageView = itemView.findViewById(R.id.profile_image);
             txtmessage = itemView.findViewById(R.id.txtMessages);
+            timeofmessage=itemView.findViewById(R.id.timeOfMessage);
 
         }
     }
