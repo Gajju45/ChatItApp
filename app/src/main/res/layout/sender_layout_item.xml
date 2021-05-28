@@ -32,13 +32,17 @@
         android:textStyle="bold" />
 
     <TextView
+        android:layout_marginEnd="@dimen/_46sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/txtMessages"
         android:id="@+id/timeOfMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+
+        android:layout_marginTop="18dp"
         android:layout_toLeftOf="@id/txtMessages"
         android:fontFamily="@font/spartan_thin"
-        android:background="@drawable/reciver_shape"
+        android:background="@drawable/sender_shape"
         android:padding="@dimen/_3sdp"
         android:textSize="10sp"
         android:text="12:00"

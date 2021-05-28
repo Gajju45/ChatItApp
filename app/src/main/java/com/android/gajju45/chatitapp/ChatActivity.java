@@ -143,6 +143,7 @@ public class ChatActivity extends AppCompatActivity { String ReciverImage, Reciv
                 sImage = snapshot.child("imageUri").getValue().toString();
                 rImage = ReciverImage;
 
+
             }
 
             @Override

@@ -2,6 +2,7 @@ package com.android.gajju45.chatitapp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,7 +45,18 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
           holder.itemView.setVisibility(View.GONE);
       }
       holder.user_name.setText(users.name);
-        holder.user_status.setText(users.getStatus());
+      //  holder.user_status.setText(users.getStatus());
+
+        //User Offline or not
+        if (users.getStatus().equals("Online"))
+        {
+            holder.user_status.setText(users.getStatus());
+            holder.user_status.setTextColor(Color.GREEN);
+        }
+        else {
+            holder.user_status.setText(users.getStatus());
+            holder.user_status.setTextColor(Color.GRAY);
+        }
         Picasso.get().load(users.getImageUri()).placeholder(R.drawable.profile).into(holder.user_profile);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
