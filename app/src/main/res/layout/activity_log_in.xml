@@ -32,10 +32,11 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="@dimen/_100sdp"
             android:layout_height="@dimen/_100sdp"
-            android:background="@drawable/logo" />
+           android:backgroundTint="@color/black"
+            android:background="@drawable/ic_baseline_chat_24" />
 
         <TextView
             android:layout_width="match_parent"
@@ -48,6 +49,7 @@
             android:textStyle="bold" />
 
         <EditText
+            android:inputType="textEmailAddress"
             android:id="@+id/login_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,6 +65,7 @@
             android:textColor="@color/black" />
 
         <EditText
+            android:inputType="textPassword"
             android:id="@+id/login_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

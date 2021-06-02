@@ -68,6 +68,7 @@
             android:textColor="@color/black" />
 
         <EditText
+            android:inputType="textEmailAddress"
             android:id="@+id/registration_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -83,6 +84,7 @@
             android:textColor="@color/black" />
 
         <EditText
+            android:inputType="textPassword"
             android:id="@+id/registration_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -98,6 +100,7 @@
             android:textColor="@color/black" />
 
         <EditText
+            android:inputType="textPassword"
             android:id="@+id/registration_confirrm_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

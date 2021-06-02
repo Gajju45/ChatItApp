@@ -36,11 +36,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/spartan_thin"
-        android:background="@drawable/reciver_shape"
         android:padding="@dimen/_3sdp"
         android:textSize="10sp"
         android:text="12:00"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         />
 
 
