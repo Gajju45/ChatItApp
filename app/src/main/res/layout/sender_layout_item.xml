@@ -38,11 +38,10 @@
         android:id="@+id/timeOfMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="10dp"
         android:layout_toLeftOf="@id/txtMessages"
         android:fontFamily="@font/spartan_thin"
-        android:padding="@dimen/_3sdp"
+
         android:textSize="10sp"
         android:text="12:00"
         android:textColor="@color/black"
